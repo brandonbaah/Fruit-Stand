@@ -35,4 +35,9 @@ class FruitsController extends Controller
       $fruits = DB::table('fruits')->select('*')->get();
       return view('fruits.fruits', compact('fruits'));
     }
+
+    public function show($id){
+      $fruit = DB::table('fruits')->where('id', '=', $id)->first();
+      return view('fruits.show', compact('fruit'));
+    }
 }

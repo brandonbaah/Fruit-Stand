@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    /** Trying to figure out association scheme; It will probably call for a
+      join table and a has_many through relationship.
+    */
+    // public function store()
+    // {
+    //   return $this->hasOne('App\Fruit');
+    // }
 }

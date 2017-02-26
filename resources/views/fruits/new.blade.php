@@ -21,6 +21,10 @@
             <label for="expiration_date">Use By</label>
             <input class="form-control" type="text" name="expiration_date" id="expiration_date">
           </div>
+          <div class="form-group">
+            <label for="photo">Photo</label>
+            <input class="form-control" type="text" name="photo" id="photo">
+          </div>
           <button class="btn btn-primary" type="submit" name="submit">Submit</button>
           <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
         </form>
