@@ -19,6 +19,7 @@ Route::get('/new', 'FruitsController@new');
 Route::post('/store', 'FruitsController@store');
 Route::get('/fruits', 'FruitsController@fruits');
 Route::get('/fruit/{id}', 'FruitsController@show');
+Route::get('/jazz', 'FruitsController@js');
 
 Auth::routes();
 

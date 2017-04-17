@@ -40,4 +40,8 @@ class FruitsController extends Controller
       $fruit = DB::table('fruits')->where('id', '=', $id)->first();
       return view('fruits.show', compact('fruit'));
     }
+
+    public function js(){
+        return view('fruits.jazz');
+    }
 }
